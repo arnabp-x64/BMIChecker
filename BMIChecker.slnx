@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BMIChecker/BMIChecker.vcxproj" />
+  <Project Path="BMIChecker/BMIChecker.vcxproj" Id="2aeec4d4-8244-4c44-a607-193f681dd669" />
 </Solution>
