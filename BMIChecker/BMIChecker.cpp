@@ -1,12 +1,39 @@
 // BMIChecker.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-# include "Functions.cpp"
+# include <iostream>
+#include <chrono>
+#include <thread>
+# include <iomanip>
+
+using namespace std;
+using namespace std::chrono;
+using namespace std::this_thread;
+
+
+void TypeWriter(const string text, int delay=30) {
+    for (char c : text) {
+        cout << c << flush;
+        sleep_for(milliseconds(delay));
+    }
+}
 
 
 int main(){
 
-    TypeWrighter("Hello World", 20);
+    TypeWriter("=============================");
+    cout << endl << setw(4);
+    TypeWriter("Welcome to BMIChecker");
+    cout << endl;
+    TypeWriter("=============================");
+    cout << endl << endl;
+
+    TypeWriter("Instructions:\n");
+    TypeWriter("1. Type your Age \n");
+    TypeWriter("2. Type your Height in miters\n");
+    TypeWriter("3. Type your Weight in Kilograms\n");
+
+
 
     return 0;
 }
