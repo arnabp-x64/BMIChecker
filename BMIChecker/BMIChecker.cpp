@@ -35,9 +35,9 @@ int main(){
 	TypeWriter("Instructions:\n");
 	cout << endl;
 	sleep_for(seconds(1));
-	TypeWriter("2. Type your Height in miters(If in other scale write hight and unit,like 5.1 ft)\n");
+	TypeWriter("1. Type your Height in miters(If in other scale write hight and unit,like 5.1 ft)\n");
 	sleep_for(seconds(1));
-	TypeWriter("3. Type your Weight in Kilograms\n");
+	TypeWriter("2. Type your Weight in Kilograms\n");
 	sleep_for(seconds(1));
 	TypeWriter("       - Press enter and see the magic...\n");
 	cout << endl;
@@ -106,6 +106,7 @@ int main(){
 			TypeWriter("Thank you for using BMIChecker. Goodbye!\n");
 			cout << endl;
 			cin.ignore();
+			cin.clear();
 			cin.get();
 		}
 	}
